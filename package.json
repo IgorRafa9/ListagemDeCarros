@@ -4,6 +4,7 @@
   "description": "Cadastro e listagem de carros",
   "main": "app.js",
   "scripts": {
+    "dev": "nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -21,6 +22,7 @@
     "cors": "^2.8.5",
     "express": "^4.17.3",
     "express-handlebars": "^6.0.2",
-    "mysql": "^2.18.1"
+    "mysql": "^2.18.1",
+    "mysql2": "^2.3.3"
   }
 }
