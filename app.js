@@ -23,7 +23,6 @@ app.use('/carros', carrosRouter);
 app.use('/motos', motosRouter);
 app.use('/index', indexRouter);
 
-
 app.listen(PORT, () => {
   console.log(`Server aberto na porta ${PORT}`)
 })

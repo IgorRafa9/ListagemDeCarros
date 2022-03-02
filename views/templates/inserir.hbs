@@ -1,0 +1,39 @@
+<div class="container mt-5">
+  <div class="card">
+    <div class="card-header">
+      <h3>Inserir Dados do Veículo</h3>
+    </div>
+    <div class="card-body">
+      <form action="/carros/inserir" method="POST">
+        <div class="form-group">
+          <label for="modelo">Modelo:</label>
+          <input type="text" name="modelo" id="modelo" value="" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="marca">Marca:</label>
+          <input type="text" name="marca" id="marca" value="" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="cor">Cor:</label>
+          <input type="text" name="cor" id="cor" value="" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="ano">Ano:</label>
+          <input type="text" name="ano" id="ano" value="" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="placa">Placa:</label>
+          <input type="text" name="placa" id="placa" value="" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="preco">Preço(R$):</label>
+          <input type="text" name="preco" id="preco" value="" class="form-control">
+        </div>
+        <div class="form-group">
+        <button type="submit" class="btn btn-sm btn-success">Salvar</button>
+        <a href="/carros/lista" class="btn btn-sm btn-danger">Voltar</a>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

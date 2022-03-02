@@ -37,6 +37,38 @@ router.post('/editar/:id', (req, res)=>{
     if(err){
       console.log(err);
     }else{
+      res.render('./carros/lista')
+    }
+  })
+})
+
+router.get('/excluir/:id', (req, res)=>{
+  connection.query(queries.excluir(req.params.id), (err, result)=>{
+    if(err){
+      console.log(err);
+    }else{
+      res.redirect('/carros/lista');
+    }
+  })
+})
+
+router.get('/inserir', (req, res)=>{
+  res.render('templates/inserir')
+})
+
+router.post('/inserir', (req, res)=>{
+  var data = {
+    modelo: req.body.modelo,
+    marca: req.body.marca,
+    cor: req.body.cor,
+    ano: req.body.ano,
+    placa: req.body.placa,
+    preco: req.body.preco
+  }
+  connection.query(queries.inserir(data), (err, result)=>{
+    if(err){
+      console.log(err);
+    }else{
       res.redirect('/carros/lista')
     }
   })

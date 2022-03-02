@@ -11,7 +11,7 @@ cnx.connect(err => {
   if(!err){
     console.log("Conexão com o Database estabelecida com sucesso!")
   }else{
-    console.log("Eroo ao se conectar! "+err)
+    console.log("Erro ao se conectar! "+err)
   }
 });
 
