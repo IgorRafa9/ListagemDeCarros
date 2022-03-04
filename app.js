@@ -17,10 +17,8 @@ app.use(express.urlencoded({extended: false}))
 
 //Encurtadores
 var carrosRouter = require('./routes/carros');
-var motosRouter = require('./routes/motos');
 var indexRouter = require('./routes/index');
 app.use('/carros', carrosRouter);
-app.use('/motos', motosRouter);
 app.use('/index', indexRouter);
 
 app.listen(PORT, () => {
