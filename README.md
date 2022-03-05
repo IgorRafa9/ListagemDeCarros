@@ -1,6 +1,6 @@
 <h1>ListagemDeCarros</h1>
 
-<h3>Terminado o mini projeto de listagem de carros. Usando NodeJS, express, handlebars, Mysql e Bootstrap.
+<p>Terminado o mini projeto de listagem de carros. Usando NodeJS, express, handlebars, Mysql e Bootstrap.
 
   
 1º -> Criando a conexão com o banco de dados (MySQL) sem o sequelize, criando assim o banco de dados dentro do próprio MySQL e puxando ele para o sistema. Após isso foram criados as queries mostrando o CRUD (Create Read Update Delete). Depois foi apenas testar a conexão.
@@ -19,4 +19,4 @@
   E por último desfindindo e testando as portas de ligação
 
 
-</h3>
+</p>
