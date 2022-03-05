@@ -16,4 +16,4 @@ cnx.connect(err => {
 });
 
 module.exports = cnx;
-//Obs.: Sempure usar o mysql2
+//Obs.: Sempre usar o mysql2
